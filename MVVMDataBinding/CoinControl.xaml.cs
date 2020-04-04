@@ -40,7 +40,7 @@ namespace MVVMDataBinding
         }
 
         /// <summary>
-        /// 
+        /// The DependencyProperty for the QuantityProperty
         /// </summary>
         public static readonly DependencyProperty QuantityProperty =
             DependencyProperty.Register(
@@ -51,7 +51,7 @@ namespace MVVMDataBinding
                 );
 
         /// <summary>
-        /// 
+        /// The Quantity this control displays and modifies
         /// </summary>
         public int Quantity
         {
@@ -65,11 +65,21 @@ namespace MVVMDataBinding
 
         }
 
+        /// <summary>
+        /// Increase click
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         public void OnIncreaseClicked(object sender, RoutedEventArgs e)
         {
             Quantity++;
         }
 
+        /// <summary>
+        /// Decrease click
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         public void OnDecreaseClicked(object sender, RoutedEventArgs e)
         {
             Quantity--;
